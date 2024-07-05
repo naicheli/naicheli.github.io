@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+    
+body{
+    background-color: rgb(199, 204, 209);
+    width: 100%;
+    height: 100px;
+}
+ nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+ }
+ h1{
+    color:aliceblue;
+    font-size: 45px;
+ }
+ ul li{
+    display: inline-block;
+    padding: 0px 20px;
+ }
+ a{
+    color:aliceblue;
+    text-decoration: none;
+ }
+
+ a:hover{
+    color:rgb(224, 197, 252) 
+ }
+ ul{
+    display: flex;
+ }
+
+ .header {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 15%;
+}
+
+ .logo img{
+height: 70px;
+width: auto;
+transition: all 0.3s;
+border-radius: 500%; /*Redondearel logo*/
+ }
+
+.header .logo {
+cursor: pointer;
+
+}
+
+nav {
+    background-color: rgb(145, 160, 179);
+    clip-path: polygon(51% 100%, 100% 80%, 100% 0, 0 0, 0 81%);
+    height: 60vh;
+    padding: 0 100px;
+    
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+ 
+#inicio header nav a:hover {
+    border-bottom: 2px solid #b579bf;
+}
+ 
+
+/* Seccioon SOBRE MI */
+.servicios{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+    position: relative;
+    top: -170px;
+    z-index: 10;
+}
+.servicios .fila{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.servicios .fila .col{
+    text-align: center;
+    width: 30%;
+}
+.servicios .fila .col .card{
+    border: 1px solid #694093;
+    height: 400px;
+    background-color: #867aa8ad;
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+}
+.servicios .icono{
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.servicios .icono .circulo{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    border: 3px solid #edeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+}
+.color{
+    background: linear-gradient(#b67ed1, #805398);
+}
+
+.servicios{
+    margin-bottom: 90px;
+}
+.servicios .card p{
+    color: #ecf3ff;
+    line-height: 38px;
+    font-size: 20px;
+}
+
+/*  HABILIDADES */
+.habilidades{
+    background:linear-gradient(to right, #7176a5, #91aec7);
+    color: #fff;
+    padding: 60px 0;
+    position: relative;
+    top: -100px;
+}
+.habilidades h2{
+    text-align: center;
+}
+.habilidades .contenedor-habi{
+    max-width: 1100px;
+    margin: auto;
+}
+.habilidades .fila{
+    display: flex;
+    justify-content: space-around;
+}
+.score{
+    padding: 10px;
+    margin: auto 0;
+}
+.score .box{
+    width: 100%;
+}
+.score .box h2{
+    display: block;
+    text-align: center;
+}
+.score .box .chart{
+    position: relative;
+    width: 160px;
+    height: 160px;
+    margin: auto;
+    line-height: 160px;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+
+/* contacto */
+.contacto{
+    background:
+        linear-gradient(rgb(118, 125, 183), rgba(173, 179, 225, 0.8)),
+        url();
+        background-size: cover;
+        color: #f7eeee;
+        margin-top: 200;
+        padding: 80px 20px;
+}
+.contacto .contenedor-contacto{
+    max-width: 1100px;
+    margin: auto;
+}
+.contacto h2{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.contacto .contenedor-contacto .fila{
+    display: flex;
+}
+.contacto .contenedor-contacto .fila .col{
+    width: 50%;
+}
+.contacto .contenedor-contacto .info{
+    margin-bottom: 30px;
+    border-left: 3px solid #f9eeee;
+    padding-left: 8px;
+}
+.contacto .contenedor-contacto .info p{
+    color: #e6e1e1;
+}
+.contacto input, .contacto textarea{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    border: 1px solid #e6e3e8 ;
+    margin-bottom: 20px;
+    outline: none;
+    color: #ddd5d1;
+}
+.contacto .btn{
+    background-color: none;
+    padding: 5px 40px;
+    border: 2px solid;
+    color: #fff;
+    cursor: pointer;
+    background: linear-gradient(#e9919f,pink);
+}
+
+footer{
+    background-color: #9d7b9d;
+    color: #fff;
+    padding: 7px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* responsabilid*/
+@media screen and (max-width:1180px){
+    .inicio{
+        clip-path: none;
+    }
+}
+@media screen and (max-width:800px){
+    .redes{
+        display: none;
+    }
+    #nav{
+        display: none;
+    }
+    #nav.responsive{
+        background-color: rgba(0,0,0,.9);
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 99;
+    }
+    #nav.responsive a{
+        font-size: 30px;
+    }
+    #icono-nav{
+        display: block;
+    }
+
+    .inicio{
+        height: auto;
+    }
+    .inicio .fila{
+        display: block;
+    }
+    .inicio .fila .col{
+        width: 100%;
+        text-align: center;
+    }
+    .inicio .fila .col h2{
+        margin-top: 20px;
+    }
+    .inicio .fila .col .contenedor-img{
+        width: 50%;
+        margin-top: 30px;
+    }
+
+    .servicios{
+        position: static;
+        padding: 20px;
+    }
+    .servicios .fila{
+        display: block;
+        margin-bottom: 0;
+    }
+    .servicios .fila .col{
+        width: 70%;
+        margin: auto;
+    }
+    .servicios .fila .col .card{
+        margin-bottom: 20px;
+    }
+    .habilidades{
+        position: static;
+    }
+
+    .trabajos nav a{
+        margin: 0 5px;
+    }
+
+    .contacto .fila{
+        display:  block !important;
+    }
+    .contacto .fila .col{
+        text-align: center;
+        width: 100% !important;
+    }
+    .contacto .fila .col .info{
+        float: left;
+        font-size: 12px;
+        width: 25%;
+    }
+}
+
